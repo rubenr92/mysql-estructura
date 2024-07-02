@@ -28,7 +28,7 @@ CREATE TABLE gafas(
     graduacioni FLOAT(2),
     graduaciond FLOAT(2),
     color VARCHAR(10),
-    montura VARCHAR(9),
+    montura ENUM('metalica', 'pasta', 'flotant'),
     color_montura VARCHAR(10),
     precio FLOAT(2),
     vendedor VARCHAR(50),

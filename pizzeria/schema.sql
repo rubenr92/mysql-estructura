@@ -57,7 +57,9 @@ CREATE TABLE producto(
     descripcion VARCHAR(200),
     imagen VARCHAR(100),
     precio FLOAT NOT NULL,
-    tipo VARCHAR(12)
+    tipo VARCHAR(12),
+    id_pedido INT UNSIGNED,
+    FOREIGN KEY (id_pedido) REFERENCES pedido(id)
 );
 
 
